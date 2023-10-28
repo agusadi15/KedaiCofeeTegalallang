@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.landing-page {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+
+  flex-direction: row;
+}
+.navbar-menu {
+  width: 600px;
+  height: 400px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.hero {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), transparent),url("gambar3.jpg");
+  width: 800px;
+  height: 400px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .hero .img {
+  position: relative;
+
+  background-image: url("foto1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.hero .img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.navbar a {
+  color: #ff8800;
+  margin-top: 1rem;
+  padding-right: 0.8rem;
+}
+
+.content h1 {
+  margin: 2rem 2rem 1rem 0rem;
+  margin-left: 0;
+  font-weight: 300;
+}
+
+.content p {
+  width: 400px;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+button {
+  width: 170px;
+  height: 40px;
+  background-color: #ff8800;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.isi {
+  width: 85%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.isi h1 {
+  font-family: "Sriracha", sans-serif;
+  margin: 0.5rem;
+  width: 350px;
+  font-weight: 200;
+  line-height: 40px;
+}
+
+.menu-card {
+  padding: 20px;
+  margin: 0.5rem;
+  width: 350px;
+  height: 120px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff8800;
+}
+
+.menu-card h5 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.menu-card p {
+  font-size: 10px;
+  font-weight: 300;
+}
+.about-us {
+  width: 80%;
+  margin-left: 30px;
+}
+
+.about-us .title {
+  margin-top: 2rem;
+  width: 40%;
+  color: #ff8800;
+}
+.about-us .title h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.about-us .title p {
+  font-size: 0.8rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.about-us .images-card {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us .images-card img {
+  width: 90%;
+}
+
+.about-us .image-card .card img {
+  width: 30%;
+  height: 282px;
+}
+.about-us .images-card .card-font {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-us .images-card .card-font h3 {
+  color: #ff8800;
+  font-size: 2rem;
+  font-weight: 500px;
+}
+
+.about-us .images-card .font p {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+/* tampilan menu start */
+
+.menu-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.menu-button {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-page .menu img {
+  width: 250px;
+  margin-bottom: 0;
+}
+.menu-page .menu .price {
+  padding: 1rem;
+  width: 250px;
+  height: 100px;
+  margin-top: -7px;
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px solid #ff8800;
+  border-top: none;
+}
+.menu-page .menu .price h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 2px;
+}
+
+.menu-page .menu .price p {
+  line-height: 10px;
+  font-size: 10px;
+  font-weight: 300;
+  padding-bottom: 2px;
+}
+
+.menu-page .menu .price h4 {
+  color: #ff8800;
+}
+
+.garis {
+  width: 60%;
+  height: 1px;
+  background-color: #ff8800;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+/* gallery */
+
+.gallery {
+  width: 80%;
+}
+.gallery .title-img h1 {
+  color: #ff8800;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.gallery .thamnail {
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.gallery .thamnail .gallery-item {
+  width: 30%;
+  margin: 5px;
+}
+.thamnail .gallery-item img {
+  width: 100%;
+}
+.gallery-item:hover img {
+  opacity: 0.7;
+}
+
+.gallery-item:hover figcaption {
+  opacity: 1;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* review */
+
+.review {
+  width: 90%;
+}
+
+.review .review-title h1 {
+  color: #ff8800;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.review .review-title p {
+  font-size: 19px;
+  color: #ffffff;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.review .core {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.review-card .gambar {
+  width: 45%;
+}
+.review-card .gambar img {
+  width: 100%;
+}
+
+.review-card .tulisan {
+  text-align: center;
+  color: #fff;
+  background-color: #000000;
+  width: 300px;
+  height: 255px;
+  border: 2px solid #ff8800;
+  border-left: none;
+  padding: 2rem;
+}
+
+.review-card .tulisan h4 {
+  margin-bottom: 0.5rem;
+}
+.review-card .tulisan p {
+  font-size: 15px;
+  font-weight: 200;
+}
+/* footer */
+.footer {
+  background-color: #000000;
+  padding: 50px 0;
+  margin: 1rem;
+}
+
+.footer h4 {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  color: #777;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  border-bottom: 1px solid #ddd;
+}
+
+.footer ul li a {
+  color: #777;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #333;
+  text-decoration: none;
+}
